@@ -1,4 +1,23 @@
+.jumbotron p {
+	color: #FFA500;
+}
+
+.jumbotron span {
+	color: #FFFFFF;
+}
+
+.main-navigation {
+	background-color: #FFA500;
+}
+
+.main-navigation a {
+	color: #FFFFFF;
+}
+
 #top-home-page {
 	background-color: #242424;
 }
 
+.active-navigation-button {
+	color: #000000 !important;
+}

@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
 
 html, body {
@@ -16,7 +17,6 @@ html, body {
 }
 
 .jumbotron p {
-	color: #FFFFFF;
 	position: relative;
 	top: calc( 50% - 50px );
 	font-weight: 100;
@@ -32,11 +32,21 @@ html, body {
 
 .page-section {
 	position: relative;
+	padding: 0 25px 25px 25px;
+}
+
+.page-section .section-title {
+	font-weight: 100;
+	font-size: 36px;
+}
+
+.page-section p {
+	font-weight: 100;
+	font-size: 20px;
 }
 
 .main-navigation {
 	top: 0;
-	background-color: #898989;
 	text-align: center;
 	width: 100%;
 	padding-top: 5px;
@@ -47,12 +57,8 @@ html, body {
 .main-navigation a {
 	font-size: 24px;
 	font-weight: 100;
-	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 	padding-left: 25px;
 	padding-right: 25px;
 	transition: 0.5s;
-}
-
-.active-navigation-button {
-	color: #FFFFFF;
+	text-decoration: none;
 }
