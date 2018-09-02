@@ -4,6 +4,7 @@
 		<link rel="stylesheet" href="styles/main-styles.css" />
 		<link rel="stylesheet" href="styles/index-page-styles.css" />
 		<script src="scripts/scrollspy.js"></script>
+		<script src="scripts/enquiry-script.js"></script>
 	</head>
 	<body>
 		<div class="jumbotron" id="top-home-page" >
@@ -30,8 +31,18 @@
 		<div class="page-section" id="contact">
 			<p class="section-title">CONTACT</p>
 			<p>
-			Annnddd more text here.
+			Send in your enquiries here. <br />
+			This is a test only.
 			</p>
+			<form class="enquiry-form" method="post" action="/requestservices/enquiry/">
+				<label for="client-name">YOUR NAME</label>
+				<input id="client-name" type="text" name="fullName" placeholder="John Doe" />
+				<label for="client-email">YOUR EMAIL</label>
+				<input id="client-email" type="text" name="emailAddress" placeholder="example.email@gmail.com" />
+				<label for="client-enquiry">YOUR ENQUIRY</label>
+				<textarea id="client-enquiry" type="text" name="enquiryDetails" placeholder="I would like a pizza pls"></textarea>
+				<input type="submit" value="Submit" />
+			</form>
 		</div>
 	</body>
 </html>
