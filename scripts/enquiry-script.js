@@ -12,6 +12,8 @@ window.onload = function() {
 				jsonData[input.name] = input.value;
 		}
 
+		enquiryForm.reset();
+		
 		var httpRequest = new XMLHttpRequest();
 		httpRequest.open(enquiryForm.method, enquiryForm.action, true);
 		httpRequest.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
