@@ -32,12 +32,15 @@ html, body {
 
 .page-section {
 	position: relative;
-	padding: 0 25px 25px 25px;
+	padding: 25px;
+	margin: 10px auto;
+	max-width: 1200px;
 }
 
 .page-section .section-title {
 	font-weight: 100;
 	font-size: 36px;
+	padding: 15px 0 15px 0;
 }
 
 .page-section p {
