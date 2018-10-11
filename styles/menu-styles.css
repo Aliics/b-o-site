@@ -1,0 +1,45 @@
+.menu {
+	background-color: floralwhite;
+}
+
+.menu .menu-group {
+	margin: 15px;
+	display: inline-grid;
+	min-width: 300px;
+}
+
+.menu .menu-group .menu-group-title {
+	font-size: 28px;
+}
+
+.menu .menu-group .menu-group-title:hover ~ .item-name {
+	background-color: pink;
+}
+
+.menu .menu-group .item-name {
+	font-size: 18px;
+	padding: 5px;
+}
+
+.menu .menu-group .item-name:hover {
+	background-color: pink;
+	margin: 0 0 0 10px;
+}
+
+.menu .menu-group .item-name::before {
+	content: ' > ';
+}
+
+.menu .menu-group .item-name .item-money {
+	font-size: 12px;
+	transition: 0.25s;
+}
+
+.menu .menu-group .item-name .item-money:hover {
+	font-size: 13px;
+	color: green;
+}
+
+.menu .menu-group .item-name .item-description {
+	font-size: 14px;
+}

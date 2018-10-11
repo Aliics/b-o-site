@@ -1,0 +1,26 @@
+.main-navigation {
+	top: 0;
+	text-align: center;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	z-index: 10;
+	background-color: #FFA500;
+}
+
+.main-navigation a {
+	font-size: 24px;
+	font-weight: 100;
+	padding-left: 25px;
+	padding-right: 25px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.main-navigation a:hover {
+	color: #A1A1A1;
+}
+
+.active-navigation-button {
+	color: #000000 !important;
+}
