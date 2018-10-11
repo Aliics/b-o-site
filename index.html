@@ -3,52 +3,48 @@
 	<head>
 		<link rel="stylesheet" href="styles/main-styles.css" />
 		<link rel="stylesheet" href="styles/index-page-styles.css" />
-		<script src="scripts/scrollspy.js"></script>
+		<script src="scripts/scroll-spy.js"></script>
 		<script src="scripts/enquiry-script.js"></script>
 		<script src="scripts/menu-loader.js"></script>
 	</head>
 	<body>
-		<div class="jumbotron" id="top-home-page" >
+		<div class="jumbotron" id="top-home-page">
 			<p>WEBSITE<span><br />my website</span></p>
 		</div>
+		
 		<div class="main-navigation">
 			<a id="about-navigation" href="#about">ABOUT</a>
 			<a id="menu-navigation" href="#menu">MENU</a>
 			<a id="contact-navigation" href="#contact">CONTACT</a>
 		</div>
-		<div class="page-section" id="about">
-			<p class="section-title">ABOUT</p>
-			<p>
-			Just a little test section with some text. <br />
-			A bit more text here. <br />
-			</p>
-		</div>
-		<div class="page-section" id="menu">
-			<p class="section-title">MENU</p>
-			<p>
-			Oh shoot more text here.
-			</p>
-			<div class="menu">
+		<div class="page-sections">
+			<div class="page-section" id="about">
+				<p class="section-title">ABOUT</p>
+				<p>
+				Just a little test section with some text. <br />
+				A bit more text here. <br />
+				</p>
 			</div>
-		</div>
-		<div class="page-section" id="contact">
-			<p class="section-title">CONTACT</p>
-			<p>
-			Send in your enquiries here. <br />
-			This is a test only.
-			</p>
-			<form class="enquiry-form" method="post" action="/requestservices/enquiry/">
-				<div class="form-title">
-					<p>ENQUIRY SUBMITION FORM</p>
+			<div class="page-section" id="menu">
+				<p class="section-title">MENU</p>
+				<div class="menu">
 				</div>
-				<label for="client-name">YOUR NAME</label>
-				<input id="client-name" type="text" name="fullName" placeholder="John Doe" />
-				<label for="client-email">YOUR EMAIL</label>
-				<input id="client-email" type="text" name="emailAddress" placeholder="example.email@gmail.com" />
-				<label for="client-enquiry">YOUR ENQUIRY</label>
-				<textarea id="client-enquiry" type="text" name="enquiryDetails" placeholder="I would like a pizza pls"></textarea>
-				<input type="submit" value="Submit" />
-			</form>
+			</div>
+			<div class="page-section" id="contact">
+				<p class="section-title">CONTACT</p>
+				<form class="enquiry-form" method="POST" action="/requestservices/enquiry/">
+					<div class="form-title">
+						<p>ENQUIRY SUBMITION FORM</p>
+					</div>
+					<label for="client-name">YOUR NAME</label>
+					<input id="client-name" type="text" name="fullName" placeholder="John Doe" />
+					<label for="client-email">YOUR EMAIL</label>
+					<input id="client-email" type="text" name="emailAddress" placeholder="example.email@gmail.com" />
+					<label for="client-enquiry">YOUR ENQUIRY</label>
+					<textarea id="client-enquiry" type="text" name="enquiryDetails" placeholder="I would like a pizza pls"></textarea>
+					<input type="submit" value="Submit" />
+				</form>
+			</div>
 		</div>
 	</body>
 </html>

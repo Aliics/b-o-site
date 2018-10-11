@@ -30,24 +30,6 @@ html, body {
 	font-size: 24px;
 }
 
-.page-section {
-	position: relative;
-	padding: 25px;
-	margin: 10px auto;
-	max-width: 1200px;
-}
-
-.page-section .section-title {
-	font-weight: 100;
-	font-size: 36px;
-	padding: 15px 0 15px 0;
-}
-
-.page-section p {
-	font-weight: 100;
-	font-size: 20px;
-}
-
 .main-navigation {
 	top: 0;
 	text-align: center;
@@ -66,11 +48,68 @@ html, body {
 	text-decoration: none;
 }
 
+.page-sections {
+	background-image: url('http://blackandorange-catering.nz/attachments/Image/Platten-Catering.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.page-sections .page-section {
+	position: relative;
+	padding: 25px;
+	margin: auto;
+	width: 90%;
+	max-width: 1200px;
+	background-color: beige
+}
+
+.page-sections .page-section .section-title {
+	font-weight: 100;
+	font-size: 36px;
+	padding: 15px 0 15px 0;
+}
+
+.page-sections .page-section p {
+	font-weight: 100;
+	font-size: 20px;
+}
+
+.menu {
+	background-color: floralwhite;
+}
+
+.menu .menu-group {
+	margin: 15px;
+	display: inline-grid;
+	min-width: 300px;
+}
+
+.menu .menu-group .menu-group-title {
+	font-size: 28px;
+}
+
+.menu .menu-group .item-name {
+	font-size: 18px;
+}
+
+.menu .menu-group .item-name::before {
+	content: ' > ';
+}
+
+.menu .menu-group .item-name .item-money {
+	font-size: 12px;
+}
+
+.menu .menu-group .item-name .item-description {
+	font-size: 14px;
+}
+
 .enquiry-form {
 	margin: 15px;
 	background-color: #B0B0B0;
 	padding: 10px 5px 50px 5px;
-	max-width: 800px;
+	max-width: 450px;
 }
 
 .enquiry-form label {
@@ -101,7 +140,7 @@ html, body {
 
 .enquiry-form textarea {
 	resize: none;
-	height: 100px;
+	height: 250px;
 }
 
 .enquiry-form .form-title {

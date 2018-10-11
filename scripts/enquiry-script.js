@@ -1,4 +1,6 @@
-window.onload = function() {
+window.addEventListener("load", setupEnquiryForm, false);
+
+function setupEnquiryForm() {
 	var enquiryFormName = "enquiry-form";
 	var enquiryForm = document.getElementsByClassName(enquiryFormName)[0];
 
@@ -19,13 +21,13 @@ window.onload = function() {
 		httpRequest.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
 		httpRequest.setRequestHeader("Access-Control-Allow-Origin", "*");
 
-		httpRequest.send(JSON.stringify(jsonData));
-
 		httpRequest.onloadend = function() {
 			if (httpRequest.status == 200)
 				alert("Enquiry sent success!");
 			else
 				alert("Enquiry could not send.");
 		};
+
+		httpRequest.send(JSON.stringify(jsonData));
 	};
 }
