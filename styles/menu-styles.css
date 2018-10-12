@@ -27,7 +27,7 @@
 
 .menu .menu-group .item-name:hover {
 	background-color: #ffe5c5;
-	margin: 0 0 0 10px;
+	margin-left: 10px; 
 }
 
 .menu .menu-group .item-name .item-money {

@@ -1,16 +1,18 @@
-window.onload = function() {
+window.addEventListener("load", setupMenuSection, false);
+
+function setupMenuSection() {
 	const serverOrigin = window.location.origin;
 
-	console.log(serverOrigin);
+	const menuSection = document.getElementById("menu");
+	const menuElement = document.createElement("div");
+	menuElement.className = "menu";
+	menuSection.appendChild(menuElement);
 
-	const menuElement = document.getElementsByClassName("menu")[0];
 	const httpRequest = new XMLHttpRequest();
-	httpRequest.open("GET", serverOrigin + "/requestservices/menu", true);
+	httpRequest.open("GET", serverOrigin + "/requestservices/site-info/menu", true);
 
 	httpRequest.setRequestHeader("Access-Control-Allow-Origin", "*");
 	httpRequest.setRequestHeader("Content-Type", "application/json");
-
-	httpRequest.send();
 
 	httpRequest.onloadend = function() {
 		if (httpRequest.status == 200) {
@@ -52,4 +54,6 @@ window.onload = function() {
 			});
 		}
 	}
+
+	httpRequest.send();
 }
