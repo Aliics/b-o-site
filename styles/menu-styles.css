@@ -1,33 +1,33 @@
 .menu {
-	background-color: floralwhite;
+	background-color: #fff1d6;
+	text-align: center;
 }
 
 .menu .menu-group {
 	margin: 15px;
 	display: inline-grid;
 	min-width: 300px;
+	text-align: left;
 }
 
 .menu .menu-group .menu-group-title {
 	font-size: 28px;
+	color: #7d4f45;
 }
 
 .menu .menu-group .menu-group-title:hover ~ .item-name {
-	background-color: pink;
+	background-color: #ffe5c5;
 }
 
 .menu .menu-group .item-name {
 	font-size: 18px;
 	padding: 5px;
+	color: #7d4f45;
 }
 
 .menu .menu-group .item-name:hover {
-	background-color: pink;
+	background-color: #ffe5c5;
 	margin: 0 0 0 10px;
-}
-
-.menu .menu-group .item-name::before {
-	content: ' > ';
 }
 
 .menu .menu-group .item-name .item-money {
@@ -36,10 +36,11 @@
 }
 
 .menu .menu-group .item-name .item-money:hover {
-	font-size: 13px;
-	color: green;
+	font-size: 14px;
+	color: #c26955;
 }
 
 .menu .menu-group .item-name .item-description {
 	font-size: 14px;
+	color: #a9806d;
 }

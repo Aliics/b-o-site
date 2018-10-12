@@ -1,7 +1,11 @@
 window.onload = function() {
+	const serverOrigin = window.location.origin;
+
+	console.log(serverOrigin);
+
 	const menuElement = document.getElementsByClassName("menu")[0];
 	const httpRequest = new XMLHttpRequest();
-	httpRequest.open("GET", "http://localhost:8080/requestservices/menu", true);
+	httpRequest.open("GET", serverOrigin + "/requestservices/menu", true);
 
 	httpRequest.setRequestHeader("Access-Control-Allow-Origin", "*");
 	httpRequest.setRequestHeader("Content-Type", "application/json");

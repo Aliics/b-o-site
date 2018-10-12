@@ -1,27 +1,31 @@
 .page-sections {
-	background-image: url('http://blackandorange-catering.nz/attachments/Image/Platten-Catering.jpg');
+	background-image: url('../resources/Platten-Catering.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	transition: 0s;
+	padding: 5px;
 }
 
 .page-sections .page-section {
 	position: relative;
 	padding: 25px;
-	margin: auto;
+	margin: 15px auto;
 	width: 90%;
 	max-width: 1200px;
-	background-color: beige
+	background-color: floralwhite;
+	box-shadow: 7px 7px #4E4E4E;
 }
 
 .page-sections .page-section .section-title {
 	font-weight: 100;
 	font-size: 36px;
 	padding: 15px 0 15px 0;
+	color: #7d4f45;
 }
 
 .page-sections .page-section p {
 	font-weight: 100;
 	font-size: 20px;
+	color: #242424;
 }
