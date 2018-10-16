@@ -1,7 +1,8 @@
 window.addEventListener("load", setupMenuSection, false);
 
 function setupMenuSection() {
-	const serverOrigin = window.location.origin;
+	const serverHost = window.location.hostname;
+	const serverPath = "http://" + serverHost + ":8080";
 
 	const menuSection = document.getElementById("menu");
 	const menuElement = document.createElement("div");
@@ -9,10 +10,10 @@ function setupMenuSection() {
 	menuSection.appendChild(menuElement);
 
 	const httpRequest = new XMLHttpRequest();
-	httpRequest.open("GET", serverOrigin + "/requestservices/site-info/menu", true);
+
+	httpRequest.open("GET", serverPath + "/requestservices/site-info/menu", true);
 
 	httpRequest.setRequestHeader("Access-Control-Allow-Origin", "*");
-	httpRequest.setRequestHeader("Content-Type", "application/json");
 
 	httpRequest.onloadend = function() {
 		if (httpRequest.status == 200) {

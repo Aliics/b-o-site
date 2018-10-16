@@ -16,8 +16,12 @@ function setupEnquiryForm() {
 
 		enquiryForm.reset();
 
+		const serverHost = window.location.hostname;
+		const serverPath = "http://" + serverHost + ":8080";
+
 		const httpRequest = new XMLHttpRequest();
-		httpRequest.open(enquiryForm.method, enquiryForm.action, true);
+
+		httpRequest.open(enquiryForm.method, serverPath + "/requestservices/enquiry", true);
 		httpRequest.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
 		httpRequest.setRequestHeader("Access-Control-Allow-Origin", "*");
 

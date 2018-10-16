@@ -1,14 +1,15 @@
 window.addEventListener("load", setupAboutSection, false);
 
 function setupAboutSection() {
-	const serverOrigin = window.location.origin;
+	const serverHost = window.location.hostname;
+	const serverPath = "http://" + serverHost + ":8080";
 
 	const aboutElement = document.getElementById("about");
 	const httpRequest = new XMLHttpRequest();
-	httpRequest.open("GET", serverOrigin + "/requestservices/site-info/about", true);
+	
+	httpRequest.open("GET", serverPath + "/requestservices/site-info/about", true);
 
 	httpRequest.setRequestHeader("Access-Control-Allow-Origin", "*");
-	httpRequest.setRequestHeader("Content-Type", "application/json");
 
 	httpRequest.onloadend = function() {
 		const requestStatusIsOk = httpRequest.status == 200;
@@ -16,8 +17,8 @@ function setupAboutSection() {
 		if (!requestStatusIsOk)
 			return;
 
-		const menuJSON = JSON.parse(this.response);
-		const aboutParagraphs = menuJSON["aboutParagraphs"];
+		const aboutJSON = JSON.parse(this.response);
+		const aboutParagraphs = aboutJSON["aboutParagraphs"];
 
 		for (const paragraph of aboutParagraphs) {
 			const aboutParagraph = document.createElement("p");
