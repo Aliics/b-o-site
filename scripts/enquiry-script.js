@@ -23,7 +23,6 @@ function setupEnquiryForm() {
 
 		httpRequest.open(enquiryForm.method, serverPath + "/requestservices/enquiry", true);
 		httpRequest.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
-		httpRequest.setRequestHeader("Access-Control-Allow-Origin", "*");
 
 		const requestStatusMessage = document.getElementsByClassName("enquiry-status").length == 0 ? document.createElement("p") : 
 										document.getElementsByClassName("enquiry-status")[0];
@@ -33,7 +32,7 @@ function setupEnquiryForm() {
 
 		enquiryForm.appendChild(requestStatusMessage);
 
-		httpRequest.onloadend = function() {
+		httpRequest.onload = function() {
 			const success = httpRequest.status == 200;
 			requestStatusMessage.innerHTML = success ? "Enquiry sent successfully!" : "Enquiry could not be sent.";
 			requestStatusMessage.style.color = success ? "#FFA500" : "red";

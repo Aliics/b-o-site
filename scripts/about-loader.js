@@ -9,9 +9,7 @@ function setupAboutSection() {
 	
 	httpRequest.open("GET", serverPath + "/requestservices/site-info/about", true);
 
-	httpRequest.setRequestHeader("Access-Control-Allow-Origin", "*");
-
-	httpRequest.onloadend = function() {
+	httpRequest.onload = function() {
 		const requestStatusIsOk = httpRequest.status == 200;
 
 		if (!requestStatusIsOk)

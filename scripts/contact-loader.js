@@ -19,9 +19,7 @@ function setupContactSection() {
 	const httpRequest = new XMLHttpRequest();
 	httpRequest.open("GET", serverPath + "/requestservices/site-info/contact", true);
 
-	httpRequest.setRequestHeader("Access-Control-Allow-Origin", "*");
-
-	httpRequest.onloadend = function() {
+	httpRequest.onload = function() {
 		if (httpRequest.status == 200) {
 			const contactJSON = JSON.parse(this.response);
 

@@ -13,9 +13,7 @@ function setupMenuSection() {
 
 	httpRequest.open("GET", serverPath + "/requestservices/site-info/menu", true);
 
-	httpRequest.setRequestHeader("Access-Control-Allow-Origin", "*");
-
-	httpRequest.onloadend = function() {
+	httpRequest.onload = function() {
 		if (httpRequest.status == 200) {
 			const menuJSON = JSON.parse(this.response);
 			
