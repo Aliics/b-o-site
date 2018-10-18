@@ -6,7 +6,7 @@
 .menu .menu-group {
 	margin: 15px;
 	display: inline-grid;
-	min-width: 300px;
+	width: 300px;
 	text-align: left;
 }
 
