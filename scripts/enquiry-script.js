@@ -22,7 +22,7 @@ function setupEnquiryForm() {
 		const httpRequest = new XMLHttpRequest();
 
 		httpRequest.open(enquiryForm.method, serverPath + "/requestservices/enquiry", true);
-		httpRequest.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+		httpRequest.setRequestHeader("Content-Type", "application/json");
 
 		const requestStatusMessage = document.getElementsByClassName("enquiry-status").length == 0 ? document.createElement("p") : 
 										document.getElementsByClassName("enquiry-status")[0];
