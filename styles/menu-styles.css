@@ -11,7 +11,7 @@
 }
 
 .menu .menu-group .menu-group-title {
-	font-size: 28px;
+	font-size: 28px !important;
 	color: #7d4f45;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .menu .menu-group .item-name {
-	font-size: 18px;
+	font-size: 18px !important;
 	padding: 5px;
 	color: #7d4f45;
 }
@@ -31,16 +31,16 @@
 }
 
 .menu .menu-group .item-name .item-money {
-	font-size: 12px;
+	font-size: 12px !important;
 	transition: 0.25s;
 }
 
 .menu .menu-group .item-name .item-money:hover {
-	font-size: 14px;
+	font-size: 14px !important;
 	color: #c26955;
 }
 
 .menu .menu-group .item-name .item-description {
-	font-size: 14px;
+	font-size: 14px !important;
 	color: #a9806d;
 }

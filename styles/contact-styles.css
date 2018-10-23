@@ -29,6 +29,6 @@
 }
 
 .contact .info-title .info {
-	font-size: 14px;
+	font-size: 14px !important;
 	color: #a9806d;
 }

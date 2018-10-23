@@ -18,7 +18,7 @@
 .enquiry-form input[type="text"], textarea {
 	width: calc( 100% - 25px );
 	margin: 10px;
-	font-size: 16px;
+	font-size: 16px !important;
 	background-color: floralwhite;
 	border-style: none;
 	padding: 3px;
@@ -27,7 +27,7 @@
 .enquiry-form input[type="submit"] {
 	background-color: #FFA500;
 	border: none;
-	font-size: 18px;
+	font-size: 18px !important;
 	padding: 4px 10px 4px 10px;
 	margin: 5px 10px;
 	display: block;

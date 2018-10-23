@@ -19,7 +19,7 @@
 
 .page-sections .page-section .section-title {
 	font-weight: 100;
-	font-size: 36px;
+	font-size: 36px !important;
 	padding: 15px 0 15px 0;
 	color: #7d4f45;
 }

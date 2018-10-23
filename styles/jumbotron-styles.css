@@ -10,7 +10,7 @@
 	position: relative;
 	top: calc( 50% - 50px );
 	font-weight: 100;
-	font-size: 60px;
+	font-size: 60px !important;
 	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
 
@@ -18,5 +18,5 @@
 	color: #FFFFFF;
 	position: relative;
 	bottom: 50px;
-	font-size: 24px;
+	font-size: 24px !important;
 }
