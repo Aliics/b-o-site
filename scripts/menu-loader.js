@@ -40,7 +40,7 @@ function setupMenuSection() {
 					itemNameParagraph.className = "item-name";
 					itemNameParagraph.innerHTML = itemName;
 					itemMoneyAttrib.className = "item-money";
-					itemMoneyAttrib.innerHTML = itemMoney != "0" ? " - $" + itemMoney + "</br>" : "";
+					itemMoneyAttrib.innerHTML = itemMoney != "0" ? " - $" + itemMoney + "<br/>" : "<br/>";
 					itemDescriptionAttrib.className = "item-description";
 					itemDescriptionAttrib.innerHTML = itemDescription;
 
