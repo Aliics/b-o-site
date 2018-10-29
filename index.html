@@ -37,12 +37,27 @@
 				<p class="section-title">CONTACT</p>
 				<form class="enquiry-form" method="POST">
 					<p class="form-title">ENQUIRY SUBMISSION FORM</p>
-					<label for="client-name">YOUR NAME</label>
-					<input id="client-name" type="text" name="fullName" placeholder="John Doe" />
-					<label for="client-email">YOUR EMAIL</label>
-					<input id="client-email" type="text" name="emailAddress" placeholder="example.email@gmail.com" />
-					<label for="client-enquiry">YOUR ENQUIRY</label>
-					<textarea id="client-enquiry" type="text" name="enquiryDetails" placeholder="I would like a pizza pls"></textarea>
+					<label for="client-name">YOUR NAME *</label>
+					<input id="client-name" type="text" name="fullName" placeholder="John Doe" required />
+					<label for="client-email">YOUR EMAIL *</label>
+					<input id="client-email" type="text" name="emailAddress" placeholder="example.email@gmail.com" required />
+					<label for="number-guests">NUMBER OF GUESTS *</label>
+					<input id="number-guests" type="text" name="numberOfGuests" placeholder="Approximate number of attendees" required />
+					<label for="location">LOCATION *</label>
+					<input id="location" type="text" name="location" placeholder="Address where the event is taking place" required />
+					<label for="event-type">TYPE OF EVENT *</label>
+					<select id="event-type" name="typeOfEvent" required >
+						<option value="none selected" disabled selected hidden>Please select...</option>
+						<option value="birthday">BIRTHDAY</option>
+						<option value="wedding">WEDDING</option>
+						<option value="other">OTHER</option>
+					</select>
+					<label for="client-enquiry">COMMENTS</label>
+					<textarea id="client-enquiry" type="text" name="comments" placeholder="Any comments or extra details."></textarea>
+					<label for="budget">BUDGET</label>
+					<input id="budget" type="text" name="budget" placeholder="Approximate budget" />
+					<label for="dateOfEvent">DATE OF EVENT *</label>
+					<input id="event-date" type="date" name="dateOfEvent" required />
 					<input type="submit" value="SUBMIT" />
 				</form>
 			</div>

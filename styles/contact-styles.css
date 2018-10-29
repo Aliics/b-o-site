@@ -4,9 +4,10 @@
 
 .contact {
 	background-color: #fff1d6;
-	padding: 15px 0 15px 0;
-	margin: 0 auto 0 25px;
+	padding: 15px;
+	margin: 0 auto;
 	max-width: 600px;
+	width: 35%;
 }
 
 .contact p {

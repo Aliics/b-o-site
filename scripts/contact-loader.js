@@ -29,7 +29,7 @@ function setupContactSection() {
 
 			contactSection.appendChild(contactSectionTitle);
 
-			setContactInformationFromJSON(contactSection, "ADDRESS", contactJSON["address"]);
+			// setContactInformationFromJSON(contactSection, "ADDRESS", contactJSON["address"]);
 			setContactInformationFromJSON(contactSection, "PHONE", contactJSON["phoneNumber"]);
 			setContactInformationFromJSON(contactSection, "EMAIL", contactJSON["emailAddress"]);
 			setContactInformationFromJSON(contactSection, "HOURS", contactJSON["prefContactHours"]);
