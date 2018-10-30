@@ -7,3 +7,24 @@
 	font-size: 16px !important;
 	margin: 5px 5px 5px 40px;
 }
+
+.page-section .about-section-holder {
+	display: flex;
+	padding: 15px 0;
+}
+
+.page-section .about-section-holder div {
+	margin: 0 auto;
+	padding: 15px;
+	background-color: #fff1d6;
+	max-width: 450px;
+	width: 40%;
+}
+
+.page-section .about-section-holder div p {
+	color: #7d4f45;
+}
+
+.page-section .about-section-holder div .about-section-title {
+	font-size: 20px !important;
+}
